@@ -67,3 +67,33 @@
   margin: 0;
   line-height: 1.6;
 }
+
+.city-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 12px;
+}
+
+.city-list__item {
+  margin: 0;
+}
+
+.city-list__button {
+  width: 100%;
+  padding: 10px 16px;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+
+  white-space: nowrap;      
+  overflow: hidden;         
+  text-overflow: ellipsis;   
+  height: 40px;             
+  display: block;           
+}

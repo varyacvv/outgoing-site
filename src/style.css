@@ -85,7 +85,7 @@ ul {
   color: #fff;
 }
 .btn--accent:hover {
-  background-color: rgb(100%, 10.1960784314%, 63.1703018286%);
+  background-color: rgb(255, 26, 161.0842696629);
 }
 
 .header {
@@ -177,14 +177,15 @@ ul {
 .event-card__image-wrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 4/1;
+  aspect-ratio: 4/3;
   overflow: hidden;
 }
 
 .event-card__image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-color: #ddd;
 }
 
@@ -484,4 +485,31 @@ ul {
   line-height: 1.6;
 }
 
-/*# sourceMappingURL=style.css.map */
+.city-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 12px;
+}
+
+.city-list__item {
+  margin: 0;
+}
+
+.city-list__button {
+  width: 100%;
+  padding: 10px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 40px;
+  display: block;
+}/*# sourceMappingURL=style.css.map */

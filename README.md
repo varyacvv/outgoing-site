@@ -1,28 +1,26 @@
-# 🎟️ EventHub
+# 🎟️ OutGoing
 
 ## RU
 
 ### Сервис поиска мероприятий
 
-**EventHub** — веб-сервис для поиска и просмотра мероприятий.
+**OutGoing** — веб-сервис для поиска и просмотра мероприятий.
 
-Проект создаётся как pet-project для практики **HTML, SCSS и JavaScript** и направлен на разработку полноценного пользовательского интерфейса с поиском, фильтрацией, сортировкой и избранным.
+Проект создаётся как pet-project для практики **HTML, SCSS и JavaScript**. Основная задача проекта — разработать удобный пользовательский интерфейс с поиском, фильтрацией, сортировкой и избранным.
 
-На платформе пользователь сможет находить интересные мероприятия, просматривать подробную информацию о них и сохранять понравившиеся события.
+Пользователь сможет находить интересные мероприятия, просматривать подробную информацию о них и сохранять понравившиеся события.
 
-### ✨ Возможности
+### Возможности
 
-Пользователь сможет:
-
-* просматривать доступные мероприятия
-* искать мероприятия по названию
-* фильтровать мероприятия по категориям
-* сортировать список мероприятий
-* открывать подробную информацию о мероприятии
-* добавлять мероприятия в избранное
-* сохранять избранные мероприятия после перезагрузки страницы
-* регистрироваться через форму
-* получать валидацию введённых данных
+* Просмотр мероприятий
+* Поиск мероприятий по названию
+* Фильтрация мероприятий по категориям
+* Сортировка списка мероприятий
+* Просмотр подробной информации о мероприятии
+* Добавление мероприятий в избранное
+* Сохранение избранного после перезагрузки страницы
+* Регистрация через форму
+* Валидация введённых данных
 
 Основные категории мероприятий:
 
@@ -33,47 +31,76 @@
 * 🎓 Лекции
 * 🎪 Фестивали
 
-### 🛠 Технологии
+### Технологии
 
 * HTML5
 * SCSS / Sass
 * JavaScript (ES6+)
 * Flexbox
 * CSS Grid
-* Git / GitHub
+* Git
 * LocalStorage
 
-### 📂 Структура проекта
+### Структура проекта
 
-```text id="5q6kpu"
-EventHub/
-├── index.html
-├── styles/
-│   └── *.scss
-├── scripts/
-│   └── *.js
+```text
+eventhub-site/
 ├── images/
-│   └── ...
+│   ├── event-logo.jpg
+│   └── logo.png
+│
+├── src/
+│   └── scss/
+│       ├── abstracts/
+│       │   ├── _mixins.scss
+│       │   └── _variables.scss
+│       │
+│       ├── base/
+│       │   └── _base.scss
+│       │
+│       ├── components/
+│       │   ├── _buttons.scss
+│       │   ├── _event-card.scss
+│       │   ├── _header.scss
+│       │   ├── _inputs.scss
+│       │   └── _modal.scss
+│       │
+│       ├── layout/
+│       │   └── _layout.scss
+│       │
+│       ├── pages/
+│       │   └── _home.scss
+│       │
+│       └── _responsive.scss
+│
+├── style.scss
+├── style.css
+├── style.css.map
+├── .gitignore
+├── index.html
+├── main.js
+├── package.json
+├── package-lock.json
 └── README.md
 ```
 
 ### Структура интерфейса
 
-```
-EventHub
+```text
+OutGoing
 │
 ├── Header
 │   ├── Логотип
-│   ├── Поиск
-│   └── Избранное
+│   ├── Навигация
+│   └── Выбор города
 │
 ├── Hero
 │   ├── Заголовок
 │   └── Описание
 │
 ├── Filters
+│   ├── Поиск
 │   ├── Категория
-│   ├── Дата
 │   └── Сортировка
 │
 ├── Events
@@ -82,17 +109,21 @@ EventHub
 ├── Modal
 │   └── Информация о мероприятии
 │
-└── Registration Form
+└── City Modal
+    └── Выбор города
 ```
 
 ### Что я практикую
 
 В рамках проекта я работаю над:
 
+В рамках проекта я работаю над:
+
 * семантической HTML-разметкой
 * адаптивной вёрсткой
-* SCSS и организацией стилей
-* созданием переиспользуемых элементов интерфейса
+* SCSS и модульной организацией стилей
+* архитектурой SCSS с разделением на abstracts, base, components, layout и pages
+* созданием переиспользуемых компонентов интерфейса
 * работой с массивами объектов в JavaScript
 * поиском и фильтрацией данных
 * сортировкой данных
@@ -101,7 +132,7 @@ EventHub
 * валидацией форм
 * работой с `localStorage`
 * организацией frontend-проекта
-* Git и GitHub workflow
+* работой с Git и GitHub
 
 ---
 
@@ -118,25 +149,23 @@ EventHub
 
 ### Event Discovery Service
 
-**EventHub** is a web service for discovering and browsing events.
+**OutGoing** is a web service for discovering and browsing events.
 
-The project is being developed as a pet project to practice **HTML, SCSS and JavaScript** and build a complete user interface with search, filtering, sorting and favorites functionality.
+The project is being developed as a pet project to practice **HTML, SCSS and JavaScript**. The main goal is to build a convenient user interface with search, filtering, sorting and favorites functionality.
 
-Users will be able to discover interesting events, view detailed information and save their favorite events for later.
+Users will be able to discover interesting events, view detailed information and save their favorite events.
 
-### ✨ Features
+### Features
 
-Users will be able to:
-
-* browse available events
-* search for events by title
-* filter events by category
-* sort the event list
-* view detailed event information
-* add events to favorites
-* keep favorites after page reload
-* register using a form
-* receive form validation feedback
+* Browse available events
+* Search events by title
+* Filter events by category
+* Sort the event list
+* View detailed event information
+* Add events to favorites
+* Keep favorites after page reload
+* Register using a form
+* Validate user input
 
 Main event categories:
 
@@ -147,7 +176,7 @@ Main event categories:
 * 🎓 Lectures
 * 🎪 Festivals
 
-### 🛠 Tech Stack
+### Tech Stack
 
 * HTML5
 * SCSS / Sass
@@ -157,15 +186,15 @@ Main event categories:
 * Git / GitHub
 * LocalStorage
 
-### 📂 Project Structure
+### Project Structure
 
-``` 
-EventHub/
+```text
+OutGoing/
 ├── index.html
-├── styles/
-│   └── *.scss
-├── scripts/
-│   └── *.js
+├── src/
+│   ├── styles/
+│   │   └── *.scss
+│   └── main.js
 ├── images/
 │   └── ...
 └── README.md
@@ -173,30 +202,32 @@ EventHub/
 
 ### Interface Structure
 
-```
+```text
 EventHub
 │
 ├── Header
 │   ├── Logo
-│   ├── Search
-│   └── Favorites
+│   ├── Navigation
+│   └── City Button
 │
 ├── Hero
 │   ├── Heading
 │   └── Description
 │
 ├── Filters
+│   ├── Search
 │   ├── Category
-│   ├── Date
-│   └── Sorting
+│   ├── Sorting
+│   └── Reset
 │
 ├── Events
 │   └── Event Cards
 │
-├── Modal
+├── Event Modal
 │   └── Event Details
 │
-└── Registration Form
+└── City Modal
+    └── City List
 ```
 
 ### What I Practice
@@ -205,8 +236,9 @@ This project helps me practice:
 
 * semantic HTML structure
 * responsive layouts
-* SCSS and stylesheet organization
-* reusable interface elements
+* SCSS and modular stylesheet organization
+* SCSS architecture with abstracts, base, components, layout and pages
+* building reusable interface components
 * working with arrays of objects in JavaScript
 * searching and filtering data
 * sorting data
@@ -222,5 +254,6 @@ This project helps me practice:
 ## Author
 
 The project is being developed by @varyacvv for educational purposes.
+
 * GitHub: [@varyacvv](https://github.com/varyacvv)
 * Telegram: [@varyacvv](https://t.me/varyacvv)
