@@ -112,28 +112,6 @@ OutGoing
 └── City Modal
     └── Выбор города
 ```
-
-### Что я практикую
-
-В рамках проекта я работаю над:
-
-В рамках проекта я работаю над:
-
-* семантической HTML-разметкой
-* адаптивной вёрсткой
-* SCSS и модульной организацией стилей
-* архитектурой SCSS с разделением на abstracts, base, components, layout и pages
-* созданием переиспользуемых компонентов интерфейса
-* работой с массивами объектов в JavaScript
-* поиском и фильтрацией данных
-* сортировкой данных
-* обработкой пользовательских событий
-* созданием модальных окон
-* валидацией форм
-* работой с `localStorage`
-* организацией frontend-проекта
-* работой с Git и GitHub
-
 ---
 
 ## Автор
@@ -229,26 +207,6 @@ EventHub
 └── City Modal
     └── City List
 ```
-
-### What I Practice
-
-This project helps me practice:
-
-* semantic HTML structure
-* responsive layouts
-* SCSS and modular stylesheet organization
-* SCSS architecture with abstracts, base, components, layout and pages
-* building reusable interface components
-* working with arrays of objects in JavaScript
-* searching and filtering data
-* sorting data
-* handling user interactions
-* creating modal windows
-* form validation
-* working with `localStorage`
-* frontend project organization
-* Git and GitHub workflow
-
 ---
 
 ## Author
