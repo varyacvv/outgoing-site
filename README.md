@@ -6,9 +6,13 @@
 
 **OutGoing** — веб-сервис для поиска и просмотра мероприятий.
 
-Проект создаётся как pet-project для практики **HTML, SCSS и JavaScript**. Основная задача проекта — разработать удобный пользовательский интерфейс с поиском, фильтрацией, сортировкой и избранным.
+https://varyacvv.github.io/outgoing-site/
+
+Проект создан для практики **HTML, SCSS и JavaScript**.
+Основная задача проекта — разработать удобный пользовательский интерфейс с поиском, фильтрацией, сортировкой и избранным.
 
 Пользователь сможет находить интересные мероприятия, просматривать подробную информацию о них и сохранять понравившиеся события.
+
 
 ### Возможности
 
@@ -116,7 +120,7 @@ OutGoing
 
 ## Автор
 
-Проект разрабатывается @varyacvv в учебных целях.
+Проект разработан @varyacvv в учебных целях.
 
 * GitHub: [@varyacvv](https://github.com/varyacvv)
 * Telegram: [@varyacvv](https://t.me/varyacvv)
@@ -128,6 +132,8 @@ OutGoing
 ### Event Discovery Service
 
 **OutGoing** is a web service for discovering and browsing events.
+
+https://varyacvv.github.io/outgoing-site/
 
 The project is being developed as a pet project to practice **HTML, SCSS and JavaScript**. The main goal is to build a convenient user interface with search, filtering, sorting and favorites functionality.
 
@@ -211,7 +217,7 @@ EventHub
 
 ## Author
 
-The project is being developed by @varyacvv for educational purposes.
+The project developed by @varyacvv for educational purposes.
 
 * GitHub: [@varyacvv](https://github.com/varyacvv)
 * Telegram: [@varyacvv](https://t.me/varyacvv)
